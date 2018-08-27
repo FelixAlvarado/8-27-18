@@ -6,3 +6,7 @@ What features can you get from lodash,curry?
 
 It allows you to pass in a funciton that can be curried automatically without writing it out
 
+What is the rationale for writing services? 
+
+Seperating different operations of your app into different classes so one app(or controller) isn't doing more that it should (creating an anti-pattern)
+

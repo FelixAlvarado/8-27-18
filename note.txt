@@ -10,3 +10,58 @@ What is the rationale for writing services?
 
 Seperating different operations of your app into different classes so one app(or controller) isn't doing more that it should (creating an anti-pattern)
 
+What are the 9 areas of inquary that you should define/ form a high level of undertanding before going into implementatoin? 
+
+Features 
+define APIS 
+availibility 
+latency performance 
+scalability
+durability
+class diagram
+security and privace 
+cost effective
+
+Compare ACID vs BASE 
+
+ACID(Atomicity, Consistency, ISolation, Durablity) is more for relational databses 
+
+BASE(BASIC Avility sort-state eventual consitency) is more for noSQL databse 
+
+What is consitent hashing? 
+
+A special kind of hashing such that when a hash table is rsized, only k/n keys will need to be remapped on average, when k is the number of keys and n is the number of slots
+
+What is optimistic vs pessimistic locking? 
+
+Optimistic locking: doesn't look ahead of time. When looking at transaction, checks to see if it was updated, and abort if its the wrong record. Good for high volume systems and when you don't need to maintain a good connection to the databse 
+
+Pessimistic locking: locks record for you exclusive use until you use it. Could  lead to deadlocks (someone else waiting on you so they can use record). Need direct connection with database or trasaction ID. 
+
+Strong vs eventual consitency 
+
+Stong: read swill see the latest write 
+
+eventual: reads will see some writes and eventuall see the latest writes 
+
+must decide with noSQL eventual provides higher availibility. 
+
+
+Compare and contrast SQL vs NoSQL: 
+
+SQL 
+Better ACID 
+vertically scalible 
+better for heavy tranactional applications 
+better support 
+predefinded schema
+
+noSQL
+scales better 
+higher availibility 
+horizontally scalible 
+better for heirarchical data 
+
+Why is caching important in system design? 
+
+Making retreiving data faster since it descreases the need for call to the databse whenever you need something. 

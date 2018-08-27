@@ -2,3 +2,7 @@ What are the steps of determining a cycle in a graph?
 
 For each edge at a vetex, form a subset by making a union between vertices (making one a parent of another). If both vertices are in the same subset, a cycle is found.
 
+What features can you get from lodash,curry? 
+
+It allows you to pass in a funciton that can be curried automatically without writing it out
+
